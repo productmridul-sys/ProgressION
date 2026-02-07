@@ -1,0 +1,103 @@
+/* Banking Dashboard Theme - Light & Dark Variants */
+
+:root {
+  /* Light Theme */
+  --banking-bg-light: #F5F7FB;
+  --banking-navbar-light: #FFFFFF;
+  --banking-card-light: #FFFFFF;
+  --banking-border-light: #E6EAF2;
+  --banking-text-primary-light: #0B1220;
+  --banking-text-secondary-light: #4B5B73;
+  --banking-accent-light: #0172CD;
+  
+  /* Dark Theme - DBX Palette */
+  --banking-bg-dark: #020816;
+  --banking-navbar-dark: #070F1E;
+  --banking-panel-dark: #0E1627;
+  --banking-card-dark: #121E34;
+  --banking-border-dark: #1A2B45;
+  --banking-divider-dark: #0B1A33;
+  
+  /* Dark Accent Blues */
+  --banking-primary-cta: #0488F2;
+  --banking-brand-blue: #0172CD;
+  --banking-hover-glow: #03396A;
+  
+  /* Dark Text */
+  --banking-text-primary-dark: #EAF2FF;
+  --banking-text-secondary-dark: #A9B9D0;
+  --banking-text-muted-dark: #7F93AD;
+  --banking-text-disabled-dark: #566781;
+}
+
+/* Apply light theme by default */
+.banking-dashboard {
+  --bg: var(--banking-bg-light);
+  --navbar: var(--banking-navbar-light);
+  --card: var(--banking-card-light);
+  --border: var(--banking-border-light);
+  --text-primary: var(--banking-text-primary-light);
+  --text-secondary: var(--banking-text-secondary-light);
+  --accent: var(--banking-accent-light);
+  --hover-glow: rgba(1, 114, 205, 0.1);
+  --table-header-bg: #F0F3F9;
+  --table-row-even: #FFFFFF;
+  --table-row-odd: #FAFBFE;
+  --success-green: #1E9E57;
+}
+
+/* Dark theme overrides */
+.banking-dashboard.dark {
+  --bg: var(--banking-bg-dark);
+  --navbar: var(--banking-navbar-dark);
+  --card: var(--banking-card-dark);
+  --border: var(--banking-border-dark);
+  --text-primary: var(--banking-text-primary-dark);
+  --text-secondary: var(--banking-text-secondary-dark);
+  --accent: var(--banking-primary-cta);
+  --hover-glow: rgba(3, 57, 106, 0.2);
+  --table-header-bg: #070F1E;
+  --table-row-even: #0E1627;
+  --table-row-odd: #121E34;
+  --success-green: #3CE07A;
+}
+
+/* Slider Styling */
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.slider::-webkit-slider-runnable-track {
+  height: 8px;
+  border-radius: 4px;
+}
+
+.slider::-moz-range-track {
+  height: 8px;
+  border-radius: 4px;
+}
+
+.slider:hover::-webkit-slider-thumb {
+  transform: scale(1.1);
+}
+
+.slider:hover::-moz-range-thumb {
+  transform: scale(1.1);
+}
